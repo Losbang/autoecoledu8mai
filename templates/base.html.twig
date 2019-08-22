@@ -1,69 +1,115 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Auto-Ecole du 8 Mai - {% endblock %}</title>
-        <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}" />
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
-    </head>
-    <body>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-                <a class="navbar-brand" href="/"><img id="logo" src="{{ asset('images/logo.png') }}"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Auto-Ecole du 8 Mai - {% endblock %}</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}"/>
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <a class="navbar-brand" href="/"><img id="logo" src="{{ asset('images/logo.png') }}"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Evaluation</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Permis
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Permis AAC</a>
-                                <a class="dropdown-item" href="#">Permis B</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Conduite
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Conduite supervisée</a>
-                                <a class="dropdown-item" href="#">Conduite seule</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Attestation
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Boîte manuelle</a>
-                                <a class="dropdown-item" href="#">Boîte automatique</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Parcours de formation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tarifs au détail</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Annulation</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            {% block body %}{% endblock %}
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Evaluation</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Permis
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Permis AAC</a>
+                        <a class="dropdown-item" href="#">Permis B</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Conduite
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Conduite supervisée</a>
+                        <a class="dropdown-item" href="#">Conduite seule</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Attestation
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Boîte manuelle</a>
+                        <a class="dropdown-item" href="#">Boîte automatique</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Parcours de formation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tarifs au détail</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Annulation</a>
+                </li>
+            </ul>
         </div>
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </body>
+    </nav>
+</header>
+
+<main>
+    <div class="container-fluid">
+        {% block body %}{% endblock %}
+    </div>
+</main>
+
+<footer class="bg-light shadow">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <h5>Horaires</h5>
+                Bureau et test de code
+                <ul>
+                    <li>Lundi et Mercredi : 18:00 - 19:00</li>
+                    <li>Vendredi : 11:00 - 12:00, 18:00 - 19:00</li>
+                </ul>
+                Cours de sécurité routière
+                <ul>
+                    <li>Lundi et Mecredi : 19:00 - 20:00</li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <h5>Partenaires</h5>
+                <div class="row">
+                    <div class="col">
+                        <img id="logo_securite-routiere" class="col" src="{{ asset('/images/logo_securite-routiere.jpg') }}">
+                    </div>
+                    <div class="col">
+                        <img id="logo_pass-rousseau" class="col" src="{{ asset('/images/logo_pass-rousseau.png') }}">
+                    </div>
+                    <div class="col">
+                        <img id="logo_permis-1-euro" class="col" src="{{ asset('/images/logo_permis-1-euro.png') }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
+</body>
 </html>
