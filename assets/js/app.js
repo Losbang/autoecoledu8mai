@@ -10,6 +10,7 @@ require('../css/app.scss');
 const $ = require('jquery');
 require('popper.js');
 require('bootstrap');
+require('@fortawesome/fontawesome-free/js/all.min.js');
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // const $ = require('jquery');
