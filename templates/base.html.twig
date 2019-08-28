@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger shadow">
         <a class="navbar-brand" href="/"><img id="logo" src="{{ asset('images/logo.png') }}"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Evaluation</a>
+                    <a class="nav-link" href="/evaluation">Evaluation</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -29,7 +29,7 @@
                         Permis
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Permis AAC</a>
+                        <a class="dropdown-item" href="/permisaac">Permis AAC</a>
                         <a class="dropdown-item" href="#">Permis B</a>
                     </div>
                 </li>
@@ -70,15 +70,15 @@
 </header>
 
 <main>
-    <div class="container-fluid">
+    <div class="container">
         {% block body %}{% endblock %}
     </div>
 </main>
 
-<footer class="bg-light shadow">
-    <div class="container-fluid">
+<footer class="navbar-dark bg-dark shadow-lg">
+    <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div id="footer-horaires" class="col-lg-4">
                 <h5>Horaires</h5>
                 Bureau et test de code
                 <ul>
@@ -90,7 +90,7 @@
                     <li>Lundi et Mecredi : 19:00 - 20:00</li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <h5>Contacts</h5>
                 <ul>
                     <li>contact@autoecoledu8mai.com</li>
@@ -98,7 +98,7 @@
                     <li>Portable : 06 24 55 55 57</li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <h5>Partenaires</h5>
                 <div class="row">
                     <div class="col">

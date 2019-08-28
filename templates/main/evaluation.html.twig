@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }}Evaluation{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>Evaluation de départ</h1>
+            <p>Ce test se déroule en situation de conduite hors et en circulation à bord d’un véhicule-école.
+                Il permet de quantifier le nombre d’heures de formation à la conduite automobile.
+                Il n’impose pas un nombre d’heures, c’est un prévisionnel.
+                Il pourra être revu à la baisse, par l’implication de l’élève dans la formation, ainsi que par la
+                fréquence des heures.
+                Prévoir de régler 46 euros non compris dans le forfait, merci. Cette évaluation permettra,
+                en concertation avec l’école de conduite, d’organiser un calendrier de formation. Elle se décompose en 8
+                rubriques :</p>
+            <ol>
+                <li>des renseignements d’ordre général sur l’élève</li>
+                <li>son expérience de la conduite</li>
+                <li>sa connaissance du véhicule</li>
+                <li>ses attitudes à l’égard de l’apprentissage et de la sécurité</li>
+                <li>ses habiletés</li>
+                <li>sa compréhension et sa mémoire</li>
+                <li>sa perception</li>
+                <li>son émotivité</li>
+            </ol>
+            <p>L’évaluation vise à la production d’un résultat codifié à 3 niveaux de performance (faible, satisfaisant,
+                bon)
+                conduisant à 3 tranches de propositions de volumes horaires.
+                Ce test durera environ 45 minutes (remplissage du questionnaire et 30 mn en voiture avec bilan).
+                Il s’appuie sur les prescriptions du Guide pour la Formation des Automobilistes (GFA).</p>
+            <h4>1. RENSEIGNEMENTS D’ORDRE GÉNÉRAL</h4>
+            <p>Sur la base d’un questionnaire et d’un échange avec le formateur :
+                identité, âge, résidence, niveau scolaire, profession, nationalité, acuité visuelle,
+                correction de la vision, visite médicale,incompatibilités déclarées.
+                Ces critères n’entraînent pas de chiffrage, mais permettent de donner des orientations au formateur
+                sur les difficultés éventuelles de compréhension de la langue française ainsi qu’éventuellement
+                de dépister des déficiences sensorielles ou motrices et de proposer une visite médicale ou de
+                suggérer un simple appareillage de la vue par exemple.</p>
+            <h4>2. EXPÉRIENCE DE LA CONDUITE</h4>
+            <p>Sur la base d’un questionnaire :
+                permis possédés, véhicules conduits, zone d’évolution à bord du véhicule, temps de pratique en conduite,
+                contexte d’accompagnement ou pratique autonome.</p>
+            <h4>3. CONNAISSANCES THÉORIQUES SUR LE VÉHICULE</h4>
+            <p>Capacité à répondre à un questionnaire à choix multiples à 3 propositions sur une série de 12 questions
+                déclinées en 4 thèmes techniques : Direction - Boîte de vitesses - Embrayage - Freinage.</p>
+            <h4>4. ATTITUDES À L’ÉGARD DE LA SÉCURITÉ ATTITUDES À L’ÉGARD DE L’APPRENTISSAGE</h4>
+            <p>Sur la base d’un entretien, hiérarchisation des attitudes à l’égard de la sécurité :
+                limitation aux aspects techniques et réglementaires de la conduite et adaptation au contexte
+                et partage de l'espace routier Sur la base d’un entretien, repérage de la motivation à
+                l’apprentissage de la conduite : par choix et motivation interne par opposition à la motivation externe
+                et la nécessité.</p>
+            <h4>5. HABILETÉS (COORDINATION ET SYNCHRONISATION DES GESTES)</h4>
+            <p>Hors circulation : • Installation au poste de conduite sur un poste de conduite déréglé en autonomie
+                sur invitation du formateur. • 5 réalisations de « départ arrêt » sur terrain plat à la suite d’une
+                démonstration commentée du formateur. • Manipulation du volant : après explications sur le fait que
+                le regard précède la trajectoire et l’action sur le volant, l’élève exécute un slalom non matérialisé
+                sans utiliser les pédales.</p>
+            <h4>6. COMPRÉHENSION ET MÉMORISATION</h4>
+            <p>Compréhension : Nécessité d’avoir recours à des explications ou démonstrations supplémentaires
+                durant les exercices concernant les habiletés. Mémorisation : Capacité à citer dans l’ordre les
+                5 opérations nécessaires pour démarrer et s’arrêter.</p>
+            <h4>7. PERCEPTION En circulation :</h4>
+            <p>À allure normale, en ville sur route, pendant environ 15 à 20 minutes, en doubles commandes
+                (autonomie : volant, clignotants, rétroviseurs), l’élève devra choisir sa direction en fonction
+                de ce que lui impose la signalisation (4 à 5 fois) et en fonction des indications données par les
+                panneaux directionnels (4 à 5 fois). L’élève est invité à regarder loin devant lui et à faire attention
+                à gauche et à droite, de tenir compte de la signalisation et des autres usagers, de mettre le
+                clignotant si nécessaire, de dire le plus tôt possible ce qui lui semble intéressant pour la
+                conduite. Compétences évaluées : sens de la trajectoire et du gabarit, capacité d’observation de
+                l’environnement, sens de l’orientation et direction du regard.</p>
+            <h4>8. ÉMOTIVITÉ</h4>
+            <p>Les réactions émotives sont évaluées durant toute la durée de l’évaluation. Elles concernent
+                les réactions générales (paroles et gestes divers) et les crispations gestuelles.</p>
+        </div>
+    </div>
+{% endblock %}
