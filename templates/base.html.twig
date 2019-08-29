@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Auto-Ecole du 8 Mai - {% endblock %}</title>
-    <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}"/>
+    <link rel="icon" type="image/png" href="{{ asset('/images/favicon.png') }}"/>
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
@@ -97,6 +97,10 @@
                     <li>Bureau : 02.40.05.14.43</li>
                     <li>Portable : 06 24 55 55 57</li>
                 </ul>
+                <div class="fb-page"
+                     data-href="https://www.facebook.com/autoecoledu8mai"
+                     data-hide-cover="false"
+                     data-show-facepile="false"></div>
             </div>
             <div class="col-lg-4">
                 <h5>Partenaires</h5>
@@ -122,6 +126,7 @@
 </footer>
 
 {% block javascripts %}
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v4.0"></script>
     {{ encore_entry_script_tags('app') }}
 {% endblock %}
 </body>
