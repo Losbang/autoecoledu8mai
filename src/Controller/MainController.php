@@ -38,4 +38,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/permisb.html.twig');
     }
+
+    /**
+     * @Route("/conduitesupervisee", name="conduitesupervisee")
+     */
+    public function conduitesupervisee()
+    {
+        return $this->render('main/conduitesupervisee.html.twig');
+    }
 }
