@@ -30,4 +30,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/permisaac.html.twig');
     }
+
+    /**
+     * @Route("/permisb", name="permisb")
+     */
+    public function permisb()
+    {
+        return $this->render('main/permisb.html.twig');
+    }
 }

@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }}Permis B{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>Permis B - 1374 €</h1>
+
+            <h4>Avant l'inscription</h4>
+            <ul>
+                <li>Evaluation de départ dynamique avec un moniteur sur véhicule<span class="prix">46 €</span></li>
+            </ul>
+
+            <h4>Inscription</h4>
+            <ul>
+                <li>Fournitures pédagogiques (livret formation, livre code, fiche suivi)<span class="prix">43 €</span></li>
+                <li>Frais de dossier<span class="prix">43 €</span></li>
+            </ul>
+
+            <h4>Code</h4>
+            <ul>
+                <li>Code (accès à la salle de code aux heures de cours valable 6 mois)<span class="prix">250 €</span></li>
+                <li>Pass Rousseau (accès aux tests et aux cours "Rousseau" sur internet)<span class="prix">35 €</span></li>
+                <li>Frais d'inscription à l'examen :</li>
+                <ul>
+                    <li>Taxe de l'état (redevance articleR221-3-3 du code de la route)<span class="prix">30 €</span></li>
+                    <li>Frais de gestion<span class="prix">11 €</span></li>
+                </ul>
+            </ul>
+
+            <h4>Formation pratique</h4>
+            <ul>
+                <li>20 heures de conduite (20h obligatoires minimum)<span class="prix">920 €</span></li>
+                <li>1 présentation à l'examen pratique (conduite)<span class="prix">46 €</span></li>
+            </ul>
+
+            <h4>Financement</h4>
+            <ul>
+                <li>474 € à l'inscription</li>
+                <li>473 € à la 1ère heure de conduite</li>
+                <li>473 € à la 11ème heure de conduite</li>
+            </ul>
+
+            <h4>Pièces à fournir</h4>
+            <ul>
+                <li>1 photocopie recto verso de la pièce d'identité</li>
+                <li>4 photos d'identité ANTS</li>
+                <li>1 photocopie de l'ASSR n°2</li>
+                <li>1 photocopie JDC (+ de 18 ans)</li>
+                <li>1 photocopie du permis AM (BSR)</li>
+                <li>1 photocopie attestation de domicile (EDF, ... + 1 copie pièce d'identité de l'hébergeant) - <a href="{{ asset('/files/Modele Attestation Hebergement.pdf') }}" target="_blank">Modèle</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
