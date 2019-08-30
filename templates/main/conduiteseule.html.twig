@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }}Conduite seule{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>La conduite seule - 1052 €</h1>
+
+            <h4>Inscription</h4>
+            <ul>
+                <li>Fournitures pédagogiques <span class="commentaire">(livret formation, fiche suivi)</span><span class="prix">43 €</span></li>
+                <li>Frais de dossier<span class="prix">43 €</span></li>
+            </ul>
+
+            <h4>Forfait conduite</h4>
+            <ul>
+                <li>20 heures de conduite <span class="commentaire">(20h obligatoires minimum, 46€ x 20h, toutes les heures supplémentaires sont au tairf en vigueur)</span><span class="prix">920 €</span></li>
+                <li>1 présentation à l'examen pratique <span class="commentaire">(conduite)</span><span class="prix">46 €</span></li>
+            </ul>
+
+            <h4>Financement</h4>
+            <ul>
+                <li>351 € à l'inscription</li>
+                <li>351 € à la 1ère heure de conduite</li>
+                <li>350 € à la 11ème heure de conduite <span class="commentaire">(toutes les heures supplémentaires sont au tarif en vigueur)</span></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

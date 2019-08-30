@@ -46,4 +46,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/conduitesupervisee.html.twig');
     }
+
+    /**
+     * @Route("/conduiteseule", name="conduiteseule")
+     */
+    public function conduiteseule()
+    {
+        return $this->render('main/conduiteseule.html.twig');
+    }
 }
