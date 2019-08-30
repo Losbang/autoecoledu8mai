@@ -64,6 +64,14 @@ class MainController extends AbstractController
     }
 
     /**
+     * @Route("/tarifs", name="tarifs")
+     */
+    public function tarifs()
+    {
+        return $this->render('main/tarifs.html.twig');
+    }
+
+    /**
      * @Route("/annulation", name="annulation")
      */
     public function annulation()

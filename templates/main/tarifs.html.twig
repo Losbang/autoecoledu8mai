@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }}Tarifs{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>Tarifs au détail</h1>
+
+            <ul>
+                <li>Code <span class="commentaire">(accès à la salle de code aux heures de cours valable 6 mois)</span><span class="prix">250 €</span></li>
+                <li>Pass Rousseau <span class="commentaire">(accès aux tests et aux cours "Rousseau" sur internet)</span><span class="prix">35 €</span></li>
+                <li>Frais de dossier<span class="prix">43 €</span></li>
+                <li>Frais d'inscription obligatoire pour le passage de l'E.T.G <span class="commentaire">(code)</span><span class="prix">30 €</span></li>
+                <li>Fournitures pédagogiques <span class="commentaire">(livret formation, livre code, fiche suivi)</span><span class="prix">43 €</span></li>
+                <li>Livret code seul<span class="prix">15 €</span></li>
+                <li>Livret vérifs Int-Ext<span class="prix">8 €</span></li>
+                <li>1 présentation à l'examen pratique <span class="commentaire">(conduite)</span><span class="prix">46 €</span></li>
+                <li>1 heure de conduite<span class="prix">46 €</span></li>
+                <li>20 heures de conduite <span class="commentaire">(20 h obligatoires minimun, 44 € x 20h)</span><span class="prix">920 €</span></li>
+                <li>Perfectionnement et remise à niveau <span class="commentaire">(reprendre la route en toute sécurité et en toute confiance après une interruption plus ou moins longue)</span><span class="prix">46 €/h</span></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
