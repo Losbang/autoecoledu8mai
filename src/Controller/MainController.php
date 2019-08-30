@@ -54,4 +54,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/conduiteseule.html.twig');
     }
+
+    /**
+     * @Route("/parcoursformation", name="parcoursformation")
+     */
+    public function parcoursformation()
+    {
+        return $this->render('main/parcoursformation.html.twig');
+    }
 }
