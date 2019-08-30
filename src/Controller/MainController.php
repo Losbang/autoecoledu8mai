@@ -62,4 +62,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/parcoursformation.html.twig');
     }
+
+    /**
+     * @Route("/annulation", name="annulation")
+     */
+    public function annulation()
+    {
+        return $this->render('main/annulation.html.twig');
+    }
 }
