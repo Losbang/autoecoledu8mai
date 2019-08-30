@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }}Attestation boîte auto/manuelle{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>Attestation Boite auto/manuelle - 352€</h1>
+
+            <h4>Inscription</h4>
+            <ul>
+                <li>Frais de dossier<span class="prix">30 €</span></li>
+            </ul>
+
+            <h4>Forfait conduite</h4>
+            <ul>
+                <li>7 heures de conduite <span class="commentaire">(46€ x 7h)</span><span class="prix">322 €</span></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

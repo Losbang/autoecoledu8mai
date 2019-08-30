@@ -70,4 +70,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/annulation.html.twig');
     }
+
+    /**
+     * @Route("/attestation", name="attestation")
+     */
+    public function attestation()
+    {
+        return $this->render('main/attestation.html.twig');
+    }
 }
