@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>Oops..</h1>
+
+            <p>
+                La page que vous recherchez n'existe pas.
+            </p>
+            <p>
+                <a href="{{ path('accueil') }}">Retourner à la page d'accueil &#128663;</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}
