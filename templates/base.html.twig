@@ -47,14 +47,22 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/attestation">Attestation boîte auto/manuelle</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/parcoursformation">Parcours de formation</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Annulation
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ path('annulationaveccode') }}">Avec code</a>
+                        <a class="dropdown-item" href="{{ path('annulationsanscode') }}">Sans code</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/tarifs">Tarifs au détail</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/annulation">Annulation</a>
+                    <a class="nav-link" href="/parcoursformation">Parcours de formation</a>
                 </li>
             </ul>
         </div>

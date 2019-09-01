@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }}Annulation{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>Annulation sans code</h1>
+
+            <h4>Avant l’inscription</h4>
+            <ul>
+                <li>Évaluation de niveau avec un moniteur sur véhicule<span class="prix">46 €</span></li>
+            </ul>
+
+            <h4>Inscription</h4>
+            <ul>
+                <li>
+                    Fournitures <span class="commentaire">(livret formation, fiche suivi)</span><span class="prix">28 €</span>
+                </li>
+                <li>
+                    Frais de gestion du dossier<span class="prix">43 €</span>
+                </li>
+            </ul>
+
+            <h4>Conduite</h4>
+            <ul>
+                <li>Nombre d’heures de conduite selon évaluation<pan class="prix">x 46 €</pan></li>
+
+                <li>1 Présentation à l'examen pratique <span class="commentaire">(conduite)</span><span class="prix">46 €</span></li>
+            </ul>
+
+            <h4>Financement</h4>
+            <ul>
+                <li>Les heures sont à régler au fur et à mesure de la formation</li>
+                <span class="commentaire">Toutes les heures supplémentaires sont au tarif en vigueur.</span>
+            </ul>
+
+            <h4>Pièce à fournir</h4>
+            <ul>
+                <li>Dossier d’inscription sur le site de l’ ANTS <span class="commentaire">(avec renseignements sur l’annulation date, délai etc)</span></li>
+                <li>Visite médicale</li>
+                <li>Tests psychotechniques</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

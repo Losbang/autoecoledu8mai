@@ -72,18 +72,26 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/annulation", name="annulation")
-     */
-    public function annulation()
-    {
-        return $this->render('main/annulation.html.twig');
-    }
-
-    /**
      * @Route("/attestation", name="attestation")
      */
     public function attestation()
     {
         return $this->render('main/attestation.html.twig');
+    }
+
+    /**
+     * @Route("/annulationaveccode", name="annulationaveccode")
+     */
+    public function annulation()
+    {
+        return $this->render('main/annulationaveccode.html.twig');
+    }
+
+    /**
+     * @Route("/annulationsanscode", name="annulationsanscode")
+     */
+    public function annulationsanscode()
+    {
+        return $this->render('main/annulationsanscode.html.twig');
     }
 }
