@@ -56,6 +56,14 @@ class MainController extends AbstractController
     }
 
     /**
+     * @Route("/postpermis", name="postpermis")
+     */
+    public function postpermis()
+    {
+        return $this->render('main/postpermis.html.twig');
+    }
+
+    /**
      * @Route("/parcoursformation", name="parcoursformation")
      */
     public function parcoursformation()
@@ -93,5 +101,13 @@ class MainController extends AbstractController
     public function annulationsanscode()
     {
         return $this->render('main/annulationsanscode.html.twig');
+    }
+
+    /**
+     * @Route("/reglementinterieur", name="reglementinterieur")
+     */
+    public function reglementinterieur()
+    {
+        return $this->render('main/reglementinterieur.html.twig');
     }
 }
